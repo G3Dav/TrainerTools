@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trainer Tools</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bmi.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="nav-bar">
+
+    <ul class="sidenav">
+      <li>
+        <img class="licon" src="icon.png" />
+        </li>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    </ul></div>
+    <div class="bg1">
+
+      <div class="transbox">
+      
+        </div>
+        <div class="toolbox">
+          <h2 class="brandtitle">My Trainer Tools</h2>
+          <form>
+                     <h4 class="tooltitle">BMI Calculator</h4>
+                     <input id="weight" type="text" placeholder="Enter your weight in lbs" />
+                     <br />
+                     <br />
+                     <input id="height" type="text" placeholder="Enter your height in inches" />
+                     <br />
+                     <br />
+
+                     <input class = "btn btn-x" type="button"  value="Submit" onclick="bmi()" />
+
+                 </form>
+                 <br />
+                 <p id="result"></p>
+          </div>
+
+        </div>
+
+
+  </body>
+</html>

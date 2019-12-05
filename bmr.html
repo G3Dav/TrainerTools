@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trainer Tools</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bmr.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="nav-bar">
+
+    <ul class="sidenav">
+      <li>
+        <img class="licon" src="icon.png" />
+        </li>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    </ul></div>
+    <div class="bg1">
+
+      <div class="transbox">
+        <!-- <div class="transbox1">
+
+          </div> -->
+          <!-- <div class="box1">
+            <h1>My Trainer Tools</h1>
+            <h3>The complete personal trainer toolkit in one.</h3>
+            </div> -->
+        </div>
+        <div class="toolbox1">
+          <h2 class="brandtitle">My Trainer Tools</h2>
+
+                     <h4 class="tooltitle">BMR Calculator</h4>
+                     <form id="bmrform" class="bmrform" action="#">
+	<p><label>Your age:</label>
+					<input type="text" size="7"  name="age" id="age" onkeyup="IsNumber(this.id)" value="" >
+	</p>
+	<p><label>Gender:</label>
+					<input id="gender"  name="gender" type="radio" value="male" checked /> <label>Male</label>
+					<input id="gender"  name="gender" type="radio" value="female" /> <label>Female</label>
+
+	</p>
+	<p><label>Your weight in lbs:</label>
+					<input type="text" size="7"  name="age" id="sweight" onkeyup="IsNumber(this.id)" value="">
+	</p>
+
+
+	<p><label>Your height in inches:</label>
+					<input id="yheight" size="7"  name="height" type="text" onkeyup="IsNumber(this.id)" value="">
+
+	</p>
+
+                 </form>
+                 <div style="text-align:center;clear:both;"><button type="button" class="btn btn-x" onClick="">Calculate</button> <input type="button" class="btn btn-x" onclick="myFunction()" value="Reset form"></div>
+<br />
+                 <p id="bmrResult"></p>
+
+
+                             </div>
+
+
+          </div>
+
+        </div>
+<script>document.getElementsByTagName("button")[0].addEventListener("click", function() {
+  calc();
+  document.getElementById('bmrResult').innerHTML = "Your basal metabolic rate is "+bmr+ " calories per day.";
+
+})
+
+function myFunction() {
+  document.getElementById("bmrform").reset();
+}
+</script>
+
+  </body>
+</html>
