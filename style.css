@@ -144,7 +144,7 @@ li a:hover:not(.active) {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   ul {
     width: 100%;
     height: auto;
