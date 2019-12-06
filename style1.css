@@ -346,7 +346,7 @@ li a:hover:not(.active) {
 
 @media screen and (max-width: 768px) {
   .about {
-    width:80%;
+    width:90%;
     text-align: center;
     padding: 0 16px 0;
     position: absolute;
