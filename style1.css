@@ -172,6 +172,7 @@ li a:hover:not(.active) {
   }
 }
 
+
 .box1 {
   color: #fff;
   /* background-color: #000; */
@@ -254,22 +255,26 @@ li a:hover:not(.active) {
 
 @media screen and (max-width: 768px) {
   .toolbox {
+    width:80%;
     text-align: center;
     padding: 0 16px 0;
     position: absolute;
-    top: 63%;
+    margin-top: 16rem;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
   }
 }
 
+
 @media screen and (max-width: 768px) {
   .toolbox1 {
+    width: 80%;
     text-align: center;
     padding: 0 16px 0;
     position: absolute;
-    top: 73%;
+    margin-top: 18rem;
+    /* top: 73%; */
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -345,7 +350,8 @@ li a:hover:not(.active) {
     text-align: center;
     padding: 0 16px 0;
     position: absolute;
-    top: 83%;
+    margin-top: 18rem;
+    /* top: 83%; */
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
